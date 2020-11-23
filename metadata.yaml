@@ -1,5 +1,7 @@
 homepage: "https://www.luratic.com"
 documentation: "https://www.luratic.com/posts/templates/tags/belboon-container-tags/"
 versions:
+  - sha: 0356e4b50e84e499d2041016f1ba4aa87df29bd9
+    changeNotes: Fix encoded uri
   - sha: a3eb5ee361cf356627f1baaa8ee6f69099b67f8f
     changeNotes: Initial release
