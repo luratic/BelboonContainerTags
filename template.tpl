@@ -168,12 +168,14 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 // Enter your template code here.
 const log = require('logToConsole');
 const setInWindow = require('setInWindow');
+const encodeUriComponent = require('encodeUriComponent');
+
 
 const injectScript = require('injectScript');
 log('data =', data);
 
-const belboonId = data.belboonId;
-const pageType = data.pageType;
+const belboonId = encodeUriComponent(data.belboonId);
+const pageType = encodeUriComponent(data.pageType);
 let belboonTag = {
   "productBrand": data.productBrand,
   "categoryId": data.categoryId,
